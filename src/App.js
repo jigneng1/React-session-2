@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { Card, CardContent } from '@mui/material';
+import { Box } from '@mui/system';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='w-screen h-screen flex justify-center items-center'>
+      <div className='w-60 '>
+        <Box className='p-8 rounded-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-xl ' >
+          <Box>
+            Hello world ,Welcome to React tailwind + MUI!
+          </Box>
+        </Box>
+      </div>
     </div>
   );
 }
